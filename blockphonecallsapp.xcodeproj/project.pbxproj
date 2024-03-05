@@ -11,7 +11,35 @@
 		9428A1B42B8142AF0070A9B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428A1B32B8142AF0070A9B9 /* ContentView.swift */; };
 		9428A1B62B8142B20070A9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9428A1B52B8142B20070A9B9 /* Assets.xcassets */; };
 		9428A1B92B8142B20070A9B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9428A1B82B8142B20070A9B9 /* Preview Assets.xcassets */; };
+		9428A1C62B828C690070A9B9 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428A1C52B828C690070A9B9 /* CallDirectoryHandler.swift */; };
+		9428A1CA2B828C690070A9B9 /* CallDirectory.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9428A1C32B828C680070A9B9 /* CallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94C827D22B97C6CD005FE476 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C827D12B97C6CC005FE476 /* ContactModel.swift */; };
+		94C827D52B97CD75005FE476 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C827D12B97C6CC005FE476 /* ContactModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9428A1C82B828C690070A9B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9428A1A62B8142AF0070A9B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9428A1C22B828C680070A9B9;
+			remoteInfo = CallDirectory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9428A1CE2B828C690070A9B9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9428A1CA2B828C690070A9B9 /* CallDirectory.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9428A1AE2B8142AF0070A9B9 /* blockphonecallsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blockphonecallsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +47,23 @@
 		9428A1B32B8142AF0070A9B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9428A1B52B8142B20070A9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9428A1B82B8142B20070A9B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9428A1C32B828C680070A9B9 /* CallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9428A1C52B828C690070A9B9 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		9428A1C72B828C690070A9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C827D12B97C6CC005FE476 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		94C827D32B97CBDD005FE476 /* blockphonecallsapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blockphonecallsapp.entitlements; sourceTree = "<group>"; };
+		94C827D42B97CC48005FE476 /* CallDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallDirectory.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9428A1AB2B8142AF0070A9B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9428A1C02B828C680070A9B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				9428A1B02B8142AF0070A9B9 /* blockphonecallsapp */,
+				9428A1C42B828C690070A9B9 /* CallDirectory */,
 				9428A1AF2B8142AF0070A9B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9428A1AE2B8142AF0070A9B9 /* blockphonecallsapp.app */,
+				9428A1C32B828C680070A9B9 /* CallDirectory.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +94,12 @@
 		9428A1B02B8142AF0070A9B9 /* blockphonecallsapp */ = {
 			isa = PBXGroup;
 			children = (
+				94C827D32B97CBDD005FE476 /* blockphonecallsapp.entitlements */,
 				9428A1B12B8142AF0070A9B9 /* blockphonecallsappApp.swift */,
 				9428A1B32B8142AF0070A9B9 /* ContentView.swift */,
 				9428A1B52B8142B20070A9B9 /* Assets.xcassets */,
 				9428A1B72B8142B20070A9B9 /* Preview Content */,
+				94C827D12B97C6CC005FE476 /* ContactModel.swift */,
 			);
 			path = blockphonecallsapp;
 			sourceTree = "<group>";
@@ -67,6 +112,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9428A1C42B828C690070A9B9 /* CallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				94C827D42B97CC48005FE476 /* CallDirectory.entitlements */,
+				9428A1C52B828C690070A9B9 /* CallDirectoryHandler.swift */,
+				9428A1C72B828C690070A9B9 /* Info.plist */,
+			);
+			path = CallDirectory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +132,34 @@
 				9428A1AA2B8142AF0070A9B9 /* Sources */,
 				9428A1AB2B8142AF0070A9B9 /* Frameworks */,
 				9428A1AC2B8142AF0070A9B9 /* Resources */,
+				9428A1CE2B828C690070A9B9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9428A1C92B828C690070A9B9 /* PBXTargetDependency */,
 			);
 			name = blockphonecallsapp;
 			productName = blockphonecallsapp;
 			productReference = 9428A1AE2B8142AF0070A9B9 /* blockphonecallsapp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9428A1C22B828C680070A9B9 /* CallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9428A1CB2B828C690070A9B9 /* Build configuration list for PBXNativeTarget "CallDirectory" */;
+			buildPhases = (
+				9428A1BF2B828C680070A9B9 /* Sources */,
+				9428A1C02B828C680070A9B9 /* Frameworks */,
+				9428A1C12B828C680070A9B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectory;
+			productName = CallDirectory;
+			productReference = 9428A1C32B828C680070A9B9 /* CallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +172,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					9428A1AD2B8142AF0070A9B9 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9428A1C22B828C680070A9B9 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -116,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				9428A1AD2B8142AF0070A9B9 /* blockphonecallsapp */,
+				9428A1C22B828C680070A9B9 /* CallDirectory */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +208,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9428A1C12B828C680070A9B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +224,28 @@
 			files = (
 				9428A1B42B8142AF0070A9B9 /* ContentView.swift in Sources */,
 				9428A1B22B8142AF0070A9B9 /* blockphonecallsappApp.swift in Sources */,
+				94C827D22B97C6CD005FE476 /* ContactModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9428A1BF2B828C680070A9B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C827D52B97CD75005FE476 /* ContactModel.swift in Sources */,
+				9428A1C62B828C690070A9B9 /* CallDirectoryHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9428A1C92B828C690070A9B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9428A1C22B828C680070A9B9 /* CallDirectory */;
+			targetProxy = 9428A1C82B828C690070A9B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9428A1BA2B8142B20070A9B9 /* Debug */ = {
@@ -267,8 +370,10 @@
 		9428A1BD2B8142B20070A9B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = blockphonecallsapp/blockphonecallsapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"blockphonecallsapp/Preview Content\"";
@@ -296,8 +401,10 @@
 		9428A1BE2B8142B20070A9B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = blockphonecallsapp/blockphonecallsapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"blockphonecallsapp/Preview Content\"";
@@ -322,6 +429,60 @@
 			};
 			name = Release;
 		};
+		9428A1CC2B828C690070A9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallDirectory/CallDirectory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65VSGS267M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallDirectory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = geniusoft.blockphonecallsapp.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9428A1CD2B828C690070A9B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallDirectory/CallDirectory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65VSGS267M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallDirectory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = geniusoft.blockphonecallsapp.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +500,15 @@
 			buildConfigurations = (
 				9428A1BD2B8142B20070A9B9 /* Debug */,
 				9428A1BE2B8142B20070A9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9428A1CB2B828C690070A9B9 /* Build configuration list for PBXNativeTarget "CallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9428A1CC2B828C690070A9B9 /* Debug */,
+				9428A1CD2B828C690070A9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
